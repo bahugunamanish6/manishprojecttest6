@@ -1,14 +1,14 @@
 package pkg3;
 
-public class Doubleloop1 
+public class Doubleloop2 
 {
-	public static void main(String[] args)
+	public static void main(String[] args) 
 	{
-		int i, j;
-		
-        for(i=0; i<4; i++)
+		int rows = 5;
+
+        for(int i = rows; i >= 1; --i)
         {
-            for(j=0; j<=i; j++)
+            for(int j = 1; j <= i; ++j) 
             {
                 System.out.print("*");
             }
