@@ -20,11 +20,17 @@ public class Facebook
 		WebElement lastname=driver.findElement(By.name("lastname"));
 		lastname.sendKeys("Bahuguna");
 		
-		WebElement email=driver.findElement(By.name("reg_email__"));
+		WebElement email=driver.findElement(By.cssSelector("input[name= 'reg_email__'"));
 		email.sendKeys("manishbahuguna6@gmail.com");
 		
-		WebElement password=driver.findElement(By.name("reg_passwd__"));
-		password.sendKeys("456@dkgfhg55");
+		WebElement pass=driver.findElement(By.id("password_step_input"));
+		pass.sendKeys("456@dkgfhg55");
+		
+		WebElement SignUp=driver.findElement(By.name("wesubmit"));
+		
+		SignUp.click();
+		
+		driver.close();
 	}
 	
 		
